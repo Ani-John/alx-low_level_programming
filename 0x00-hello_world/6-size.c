@@ -17,3 +17,4 @@ float flo;
 	printf("Size of long long int: %lu byte(s)\n", sizeof(lli));
 	printf("Size of float: %lu byte(s)\n", sizeof(flo));
 return (0);
+}
