@@ -31,7 +31,7 @@ int main(void)
 		}
 		else if ((k < 6) && (k != 0))
 		{
-			printf("Last digit of %d is %d and is less than 6", n, k);
+			printf("Last digit of %d is %d and is less than 6 and not 0", n, k);
 		}
 	return (0);
 }
