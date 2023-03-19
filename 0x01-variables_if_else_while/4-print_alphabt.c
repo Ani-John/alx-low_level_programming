@@ -12,5 +12,6 @@ int main(void)
 
 	for (i = 0; i < 23; i++)
 		putchar(abc[i]);
+	putchar('\n');
 	return (0);
 }
