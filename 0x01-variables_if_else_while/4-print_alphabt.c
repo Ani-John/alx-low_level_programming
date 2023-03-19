@@ -10,7 +10,7 @@ int main(void)
 	int i = 0;
 	char abc[24] = "abcdfghijklmnoprstuvwxyz";
 
-	for (i = 0; i < 23; i++)
+	for (i = 0; i < 24; i++)
 		putchar(abc[i]);
 	putchar('\n');
 	return (0);
