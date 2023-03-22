@@ -6,10 +6,10 @@
  */
 int _putchar(void)
 {
-	char lett[] = {"putchar"};
+	char lett[] = {"_putchar"};
 	int i = 0;
 
-	while (i < 7)
+	while (i < 8)
 	{
 		putchar(lett[i]);
 		i = i + 1;
