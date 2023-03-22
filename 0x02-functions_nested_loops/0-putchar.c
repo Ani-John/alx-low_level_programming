@@ -8,6 +8,6 @@
  */
 int main(void)
 {
-	putonscreen();
+	_putchar();
 	return (0);
 }

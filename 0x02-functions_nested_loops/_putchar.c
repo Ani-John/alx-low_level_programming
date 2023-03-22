@@ -4,7 +4,7 @@
  * putonscreen - a function that prints 'putchar'
  * Return: 0
  */
-int putonscreen(void)
+int _putchar(void)
 {
 	char lett[] = {"putchar"};
 	int i = 0;
