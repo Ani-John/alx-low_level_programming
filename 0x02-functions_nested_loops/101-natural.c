@@ -17,8 +17,7 @@ int main(void)
 			j += i;
 		}
 	}
-	printf("the sum of all the multiples of 3 or");
-	printf("5 below 1024 (excluded) is: %d", j);
+	printf("%d", j);
 	printf("\n");
 	return (j);
 }
