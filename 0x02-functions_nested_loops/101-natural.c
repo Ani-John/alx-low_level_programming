@@ -3,7 +3,7 @@
  * main - a program that computes and prints the sum of
  * all the multiples of 3 or 5 below 1024 (excluded),
  * followed by a new line.
- * Return: the sum of all the multiples of 3 and 5
+ * Return: SUCCESS
  */
 int main(void)
 {
@@ -19,5 +19,5 @@ int main(void)
 	}
 	printf("%d", j);
 	printf("\n");
-	return (j);
+	return ('SUCCESS');
 }
