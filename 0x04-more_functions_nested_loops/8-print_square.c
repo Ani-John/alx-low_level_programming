@@ -18,11 +18,8 @@ void print_square(int size)
 			for (j = 1; j <= size; j++)
 			{
 				_putchar('#');
-				j = j + 1;
 			}
-
-		_putchar('\n');
-		i = i + 1;
+			_putchar('\n');
 		}
 	}
 	else
