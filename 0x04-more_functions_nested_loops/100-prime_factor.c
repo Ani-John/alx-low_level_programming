@@ -6,26 +6,20 @@
  *
  * Return: Always 0.
  */
-int main(void)
+
+long main(void)
 {
-	long prime = 612852475143, div;
+	long num = 612852475143;
+	int i = 2;
+	long lpf = num;
 
-	while (div < (prime / 2))
+	while (i < lpf)
 	{
-		if ((prime % 2) == 0)
-		{
-			prime /= 2;
-			continue;
-		}
-
-		for (div = 3; div < (prime / 2); div += 2)
-		{
-			if ((prime % div) == 0)
-				prime /= div;
-		}
+		if (lpf % i == 0)
+			lpf /= i;
+		else
+			i += 1;
 	}
-
-	printf("%ld\n", prime);
-
-	return (0);
+	printf("largest prime factor of %ld is: %ld", num, lpf);
+	return (lpf);
 }
