@@ -7,7 +7,7 @@
  * Return: Always 0.
  */
 
-long main(void)
+int main(void)
 {
 	long num = 612852475143;
 	int i = 2;
@@ -20,6 +20,6 @@ long main(void)
 		else
 			i += 1;
 	}
-	printf("largest prime factor of %ld is: %ld", num, lpf);
+	printf("largest prime factor of %ld is: %ld\n", num, lpf);
 	return (lpf);
 }
