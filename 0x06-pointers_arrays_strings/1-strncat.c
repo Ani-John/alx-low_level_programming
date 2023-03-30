@@ -20,13 +20,11 @@ char *_strncat(char *dest, char *src, int n)
 		len_dest += 1;
 		a++;
 	}
-
 	while (*(src + b) != '\0')
 	{
 		len_src += 1;
 		b++;
 	}
-
 		if ((n < len_src) && (n > 0))
 		{
 			for (c = 0; c < n; c++)
