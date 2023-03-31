@@ -15,13 +15,13 @@ int a = 0;
 int b;
 int c;
 
-if (len_src > 0)
-{
 	while (*(src + a) != '\0')
 	{
 		len_src += 1;
 		a++;
 	}
+if (len_src > 0)
+{
 	if ((n > 0) && (n < len_src))
 	{
 		for (b = 0; b < n; b++)
