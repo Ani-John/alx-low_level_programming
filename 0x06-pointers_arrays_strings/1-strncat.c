@@ -31,8 +31,7 @@ char *_strncat(char *dest, char *src, int n)
 			{
 				dest[len_dest] = src[c];
 				len_dest++;
-				c++;
-			}
+		}
 		}
 		else if (n >= len_src)
 		{
