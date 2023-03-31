@@ -15,6 +15,8 @@ int a = 0;
 int b;
 int c;
 
+if (len_src > 0)
+{
 	while (*(src + a) != '\0')
 	{
 		len_src += 1;
@@ -37,4 +39,6 @@ int c;
 	}
 
 	return (dest);
+}
+return (dest);
 }
