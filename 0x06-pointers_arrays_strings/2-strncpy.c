@@ -40,5 +40,6 @@ if (len_src > 0)
 
 	return (dest);
 }
+else if (!src[0])
 return (dest);
 }
