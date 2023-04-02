@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - Add one line to this code, so
+ * main - Add one line to this code so
  * that the program prints a[2] = 98
  *Return: 0
  */
