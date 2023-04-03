@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * _strspn - a function that gets the length of a prefix substring.
  * @s: The searched string.
@@ -19,4 +20,11 @@ if (s[j] == accept[i])
 {
 span += 1;
 break;
+}
+else if (accept[i + 1] == '\0')
+return (span);
+}
+j++;
+}
+return (span);
 }
