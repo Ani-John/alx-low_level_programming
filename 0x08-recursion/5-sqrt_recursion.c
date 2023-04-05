@@ -26,11 +26,9 @@ int sqr(int n, int root)
 	if (root >= n / 2)
 		return (-1);
 
-	if ((root *root) == n)
+	if ((root * root) == n)
 		return (root);
 	return (sqr(n, (root + 1)));
-	
-
 }
 
 /**
