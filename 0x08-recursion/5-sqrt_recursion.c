@@ -1,4 +1,6 @@
-#include "main.h"
+int sqr(int n, int root);
+int _sqrt_recursion(int n);
+
 /**
  * sqr - finds the square root by trying various values of root.
  *
@@ -10,7 +12,7 @@
  * -1 if the number does not have a natural square root
  */
 
-int sqr(n, root)
+int sqr(int n, int root)
 {
 	if (n < 0)
 		return (-1);
@@ -26,7 +28,9 @@ int sqr(n, root)
 
 	if ((root *root) == n)
 		return (root);
-	sqr(n, (root + 1));
+	return (sqr(n, (root + 1)));
+	
+
 }
 
 /**
@@ -36,8 +40,9 @@ int sqr(n, root)
  *  Return: the square root
  */
 
+#include "main.h"
 int _sqrt_recursion(int n)
-{{
+{
 	int root = 0;
 
 	return (sqr(n, root));
