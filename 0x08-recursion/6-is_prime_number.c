@@ -17,7 +17,7 @@ int isp(int n, int i)
 	if (!(n % (i)))
 		return (0);
 
-	isp(n, (i - 1));
+	return (isp(n, (i - 1)));
 }
 
 
