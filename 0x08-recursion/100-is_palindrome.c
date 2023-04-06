@@ -48,7 +48,7 @@ int is_palindrome(char *s)
 	int i = 0;
 	int len = getlen(s);
 
-	if (s == '\0')
+	if (*s == '\0')
 		return (1);
 
 	return (isp(len, s, i));
