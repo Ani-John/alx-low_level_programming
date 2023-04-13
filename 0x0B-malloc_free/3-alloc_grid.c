@@ -42,6 +42,5 @@ int **alloc_grid(int width, int height)
 			j++;
 		}
 	}
-	free (p);
 	return (p);
 }
