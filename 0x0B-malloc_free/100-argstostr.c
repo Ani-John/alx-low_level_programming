@@ -3,12 +3,13 @@
 #include <string.h>
 
 /**
- *  * argstostr - a function that concatenates all the arguments of your program and separate them by a new line in the string.
- *   * @ac: The number of arguments passed to the program.
- *    * @av: An array of pointers to the arguments.
- *     *
- *      * Return: Returns a pointer to the new string or, NULL if ac is 0, av is NULL, or the function fails.
- *       */
+ * argstostr - a function that concatenates all the arguments of your
+ * program and separate them by a new line in the string.
+ * @ac: The number of arguments passed to the program.
+ * @av: An array of pointers to the arguments.
+ * Return: Returns a pointer to the new string or, NULL if ac is 0,
+ * av is NULL, or the function fails.
+ */
 char *argstostr(int ac, char **av)
 {
 	char *p;
@@ -46,4 +47,4 @@ char *argstostr(int ac, char **av)
 	p[i++] = '\0';
 
 	return (p);
-}
+
