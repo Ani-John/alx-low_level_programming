@@ -6,7 +6,7 @@ int numofwordsin(char *str);
 char **strtow(char *str);
 
 /**
- * numoflettersin - finds the count for the end of first word
+ * endofword - finds the count for the end of first word
  * in a given string
  * @str: The string.
  *
