@@ -9,8 +9,8 @@
 
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	long unsigned int i;
-	long unsigned int j = 0;
+	unsigned long int i;
+	unsigned long int j = 0;
 
 	if (array == NULL || size == j || action == NULL)
 		return;
