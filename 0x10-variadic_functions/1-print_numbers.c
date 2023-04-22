@@ -7,7 +7,6 @@
  * @...: A variable number of numbers to be printed.
  */
 
-#include "stdarg.h"
 #include <stdlib.h>
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
@@ -18,13 +17,11 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	for (i = 0; i < n; i++)
 	{
 
-		if ((i == n - 1) && (separator != NULL))
-			printf("%d", va_arg(list, int));
-		else if (separator != NULL)
-		{
-			printf("%d", va_arg(list, int));
+		printf("%d", va_arg(list, int));
+		if ((separator != NULL) && (i != n - 1))
 			printf("%s", separator);
-		}
+
+
 	}
 	va_end(list);
 
