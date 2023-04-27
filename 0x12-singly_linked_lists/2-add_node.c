@@ -15,10 +15,10 @@ list_t *add_node(list_t **head, const char *str)
 {
 	int count;
 	list_t *newnode;
-	char *dup;
+	char *duplicated_copy;
 
 	duplicated_copy = strdup(str);
-	if (dup == NULL)
+	if (duplicated_copy == NULL)
 		return (NULL);
 	count = strlen(duplicated_copy);
 
