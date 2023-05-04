@@ -21,14 +21,14 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 		len++;
 		p = p->next;
 	}
-	    
+
 	if (index >= len)
 		return (NULL);
-	
+
 	ptr = head;
-	   
+
 	for (i = 0; i < index; i++)
 		ptr = ptr->next;
-	    
+
 	return (ptr);
 }
