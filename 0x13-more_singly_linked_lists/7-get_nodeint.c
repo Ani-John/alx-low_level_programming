@@ -6,27 +6,29 @@
  * @head: A pointer to the head of the listint_t list.
  * @index: the index of the node, starting at 0
  *
- * Return:  NULL If the node does not exist or returns the nth node of a listint_t linked list.
+ * Return:  NULL If the node does not exist or returns the nth
+ * node of a listint_t linked list.
  */
 
-listint_t *get_nodeint_at_index(listint_t *head unsigned int index)
+listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
-	listint_t *ptr;
-	int i, len = 0;
+	listint_t *ptr, *p;
+	unsigned int i, len = 0;
 
-	while (h)
+	p = head;
+	while (p)
 	{
 		len++;
-		h = h->next;
+		p = p->next;
 	}
 	    
-	if n >= len
+	if (index >= len)
 		return (NULL);
-	    
+	
 	ptr = head;
+	   
+	for (i = 0; i < index; i++)
+		ptr = ptr->next;
 	    
-	for (i = 0, i < index, i++)
-		ptr++;
-	    
-	return (*ptr)
+	return (ptr);
 }
