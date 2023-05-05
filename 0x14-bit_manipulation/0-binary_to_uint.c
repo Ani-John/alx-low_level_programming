@@ -10,10 +10,10 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int int_value = 0, mult = 1;
-	int len, idx = 0;
+	unsigned int k = 1, int_value = 0;
+	int len;
 
-	if (b == '\0')
+	if (b == NULL)
 		return (0);
 
 	len = strlen(b);
@@ -23,8 +23,8 @@ unsigned int binary_to_uint(const char *b)
 		if (b[len] != '1' && b[len] != '0')
 			return (0);
 
-		int_value += (b[len] - '0') * (pow(2, idx));
-		idx += 1;
+		int_value += ((b[len] - '0') * k);
+		k *= 2;
 	}
 	return (int_value);
 }
