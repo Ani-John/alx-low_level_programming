@@ -1,45 +1,52 @@
 #include "lists.h"
 
 /**
- *  * insert_nodeint_at_index - Inserts a new node to a listint_t
- *   *                           list at a given position.
- *    * @head: A pointer to the address of the
- *     *        head of the listint_t list.
- *      * @idx: The index of the listint_t list where the new
- *       *       node should be added - indices start at 0.
- *        * @n: The integer for the new node to contain.
- *         *
- *          * Return: If the function fails - NULL.
- *           *         Otherwise - the address of the new node.
- *            */
+ * insert_nodeint_at_index - Locates a given node of
+ * a listint_t linked list.
+ *
+ * @head: A pointer to the head of the listint_t list
+ * @idx: the index of the node, starting at 0
+ * @n: the int data of the new node
+ *
+ * Return:  The address of the new node, or NULL if
+ * it failed. if it is not possible to add the new
+ * node at index idx, return NULL
+ */
+
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
-		listint_t *new, *copy = *head;
-			unsigned int node;
+	listint_t *ptr, *p, *current_node;
+	unsigned int i, len = 0;
 
-				new = malloc(sizeof(listint_t));
-					if (new == NULL)
-								return (NULL);
+	p = *head;
+	while (p)
+	{
+		len++;
+		p = p->next;
+	}
 
-						new->n = n;
+	if (idx > len - 1)
+		return (NULL);
 
-							if (idx == 0)
-									{
-												new->next = copy;
-														*head = new;
-																return (new);
-																	}
+	ptr = malloc(sizeof(listint_t));
+	if (ptr == NULL)
+	{
+		free(ptr);
+		return (NULL);
+	}
+	ptr->n = n;
 
-								for (node = 0; node < (idx - 1); node++)
-										{
-													if (copy == NULL || copy->next == NULL)
-																	return (NULL);
+	if (idx == 0)
+	{
+		ptr->next = *head;
+		*head = ptr;
+		return (*head);
+	}
 
-															copy = copy->next;
-																}
-
-									new->next = copy->next;
-										copy->next = new;
-
-											return (new);
+	current_node = *head;
+	for (i = 0; i < (idx - 1); i++)
+		current_node = current_node->next;
+	ptr->next = current_node->next;
+	current_node->next = ptr;
+	return (ptr);
 }
