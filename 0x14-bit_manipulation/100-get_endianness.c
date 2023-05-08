@@ -9,7 +9,7 @@ int get_endianness(void)
 {
 	int k = 3;
 	int	num = k >> 1;
-	char *ptr;
+	int *ptr;
 
 	ptr = &num;
 
