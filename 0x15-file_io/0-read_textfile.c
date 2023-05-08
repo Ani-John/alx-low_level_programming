@@ -4,8 +4,9 @@
  * read_textfile -  a function that reads a text file and prints it to
  * the POSIX standard output.
  * @letters: The number of characters to be read and printed.
+ * @filename: the file whose text is to be read and printed.
  *
- * Return: The number of chars the function could read and print. Or 
+ * Return: The number of chars the function could read and print. Or
  * Returns 0 if the function fails or filename is NULL.
  */
 
