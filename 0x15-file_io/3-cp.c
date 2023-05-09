@@ -8,20 +8,6 @@ char *src_ptr, char *dest_ptr);
  * arguments.
  *
  * Return: 0 on success.
- *
- * Description: a program that copies the content of a file to
- * another file.
- * if file_to already exists, truncate it
- * if file_from does not exist, or if you can not read it, exit with
- * code 98
- * if can not create or if write to file_to fails, exit with code 99
- * and print
- * Error: Can't write to NAME_OF_THE_FILE.
- * if you can not close a file descriptor , exit with code 100 and
- * print
- * Error: Can't close fd FD_VALUE, followed by a new line, on the
- * POSIX standard
- * error where FD_VALUE is the value of the file descriptor
  */
 
 int main(int argc, char *argv[])
