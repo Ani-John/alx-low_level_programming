@@ -76,6 +76,7 @@ int main(int argc, char *argv[])
  * @a: returned value of read system call
  * @src_ptr: a pointer to source file
  * @dest_ptr: a poinnter to destination file
+ * Return: a pointer to allocated memory
  */
 
 char *read_src_to_dest(char *buffer, int *dest, int *src, int *a,
