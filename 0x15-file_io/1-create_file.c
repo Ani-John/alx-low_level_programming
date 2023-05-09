@@ -16,15 +16,15 @@ int create_file(const char *filename, char *text_content)
 {
 	ssize_t a, b;
 
-	if (!(text_content != NULL))
+	if (!(filename != NULL))
 		return (-1);
 
 	a = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
-
-	b = write(a, text_content, strlen(text_content));
 	if (b == -1)
 		return (-1);
-	else if (a == -1)
+	if
+	b = write(a, text_content, strlen(text_content));
+	if (a == -1)
 		return (-1);
 	close(a);
 
